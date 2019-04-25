@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta http-equiv="X-AU-Compatible" content="ie-edge">
+  <title>FCC: Survey Form</title>
+  <meta author="Coralize CM">
+  <meta description="Free Code Camp Survey Project">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  <main>
+  <h1 id="title">Pick a Pallet Project</h1>
+
+  <p id="description">Please help me figure out what my next pallet wood project will be.</p>
+
+  <form id="survey-form">
+    <div class="details">
+      <div>
+        <label for="name" id="name-label">Name:</label>
+        <input id="name" type="text" name="name" placeholder="Enter your name" required>
+      </div>
+      <div>
+        <label for="email" id="email-label">Email:</label>
+        <input id="email" type="email" name="email" placeholder="Enter your email" required>
+      </div>
+      <div>
+        <label for="age" id="number-label">Age:</label>
+        <input id="number" type="number" name="age" min="15" max="100" placeholder="Age">
+      </div>
+    </div>
+
+    <div id="radio">
+    What would you like to see me build next?
+      <div id="radio1">
+        <input type="radio" name="item" value="bench">
+        <label for="bench">Bench
+          <img src="images/bench.jpg" alt="Pallet wood bench">
+        </label>
+      </div>
+      <div id="radio2">
+        <input type="radio" name="item" value="table">
+        <label for="table">Coffee Table
+          <img src="images/coffee_table.jpg" alt="Pallet wood coffee table">
+        </label>
+      </div>
+      <div id="radio3">
+        <input type="radio" name="item" value="shelving">
+        <label for="shelving">Shelving Rack
+          <img src="images/shelving_rack.jpg" alt="Pallet wood shelving rack">
+        </label>
+      </div>  
+    </div>
+
+    <div id="checkboxes">
+    Will this item be used indoors or outdoors? (You can select one or both options.)
+      <div id="check1">
+        <label for="indoors-outdoors">
+          <input type="checkbox" name="indoors-outdoors" value="indoors">Indoors
+        </label>
+      </div>
+      <div id="check2">
+        <label for="indoors-outdoors">
+          <input type="checkbox" name="indoors-outdoors" value="outdoors">Outdoors
+        </label>
+      </div>
+    </div>
+
+    <div id="dropdown">
+    What type of finish would you like on this item?
+      <select name="finish">
+        <option value="natural">Natural Look</option>
+        <option value="white">White Wash</option>
+        <option value="dark">Dark Stain</option>
+      </select>
+    </div>
+
+    <div class="comment">
+    Any Comments or Suggestions?
+      <textarea id="comments" name="comment" placeholder="Enter your comments or suggestions here..."></textarea>
+    </div>
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</main>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</body>
+
+</html>
